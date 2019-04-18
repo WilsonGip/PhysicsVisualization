@@ -5,3 +5,5 @@
 
 # Our Mission:
 *See Physics* is an online web service created with the intent of providing simple and intuitive visualizations and demonstrations of classical physics concepts.
+
+[Link to official Group's github project](https://github.com/TheCPPGang/PhysicsVisualization)
