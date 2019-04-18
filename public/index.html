@@ -1,0 +1,118 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+		<link rel="icon" href="../images/logo.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" href="../images/logo.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="../styles/matter-demo.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="../styles/index.css">
+        <title>See Physics</title>
+    </head>
+   
+    <body id="body" class="bg-darkblue text-white">
+        
+        <div class="container-fluid jumbotron jumbotron-fluid" id="jumboTron">
+            <div class="container">
+                <div id="physics-logo">
+                <img src="../images/logo.png"" alt="SeePhysics Logo"> 
+                </div>
+                <div class="text-right text-white">
+                    <p class="h3" id="description">Online tool to help you visualize physics concepts</p>
+                    <p class="">Select a demo from below to get started</p>
+                </div>
+            </div>
+        </div>
+        <section class="move-area"> 
+            <div class="welcome">
+                <nav class="navbar navbar-expand-lg navbar-dark navbar-def">
+                    <a class="navbar-brand" href="javascript:void(0)" disabled="true">Demos</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active px-5">
+                                <a class="nav-link" href="javascript:void(0)" id="circularMotion">Circular Motion</a>
+                            </li>
+                            <li class="nav-item active px-5">
+                                <a class="nav-link" href="javascript:void(0)" id="universalGravitation">Universal Gravitation</a>
+                            </li>
+                            <li class="nav-item active px-5">
+                                <a class="nav-link" href="javascript:void(0)" id="dielectrics">Dielectrics</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                
+            <!--<div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="mode" name="example1">
+                <label class="custom-control-label" for='mode'>Dark Mode</label>
+            </div>-->
+            </div>
+            <div class="container border border-primary mt-3 p-3 text-center rounded-5 bg-mdblue"  id="problemDescription">	
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="canvasDiag bg-dark" id="diagram"></div>
+                    <div class="rColumn bg-mdblue border-primary" id=settingCol>
+                        <div class="settings">
+                            <p class="h3 ">Settings</p>
+                            <div class="" id="settings">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    		<div class="text-center equationDesc" id="equationHolder">
+                <div class="m-2">
+                    <div class="container card-header bg-lightblue" >
+                        <p class="h3 border-bottom border-light p-3">Equations</p>
+                    </div>
+                    <div class="container bg-mdblue" id="equations"></div>
+                </div>
+                <div id="variables" class="m-2"></div>
+    		</div>
+        </section>
+    </body>
+    <footer class="container my-md-3 py-md-3 border-top">
+        <a href="">See Physics</a>
+    </footer>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script 
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" 
+        integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" 
+        crossorigin="anonymous"></script>
+    <script 
+        type="text/javascript" 
+        src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.2/randomColor.min.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            showMathMenu: false,
+            tex2jax: {
+              inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+              processEscapes: true
+            }
+        });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    <script language="javascript" type="text/javascript" src="../libraries/matter.js"></script>
+    <script src="../libraries/matter-tools.gui.js"></script>
+    <script src="../libraries/matter-tools.inspector.js"></script>
+    <script src="../libraries/matter-tools.demo.js"></script>
+    <script language="javascript" type="text/javascript" src="../demo/universalGravitation.js"></script>
+    <script language="javascript" type="text/javascript" src="../demo/circularMotion.js"></script>
+    <script language="javascript" type="text/javascript" src="../demo/dielectric.js"></script>
+    <script language="javascript" type="text/javascript" src="../demo/projectile.js"></script>
+    <script language="javascript" type="text/javascript" src="../demo/motion.js"></script>
+    <script language="javascript" type="text/javascript" src="../demo/demo.js"></script>
+    <script language="javascript" type="text/javascript" src="../styles/darkMode.js"></script>
+</html>
